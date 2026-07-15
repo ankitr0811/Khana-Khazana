@@ -8,7 +8,7 @@ export default function Home() {
   const [search, setSearch] = useState('')
   const loadFoodItems = async () => {
     try {
-      let response = await fetch("http://localhost:5000/api/foodData", {
+      let response = await fetch("https://khana-khazana-1.onrender.com/api/foodData", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

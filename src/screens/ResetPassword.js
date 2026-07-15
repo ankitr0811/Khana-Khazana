@@ -28,7 +28,7 @@ export default function ResetPassword() {
       return
     }
 
-    const response = await fetch("http://localhost:5000/api/resetpassword", {
+    const response = await fetch("https://khana-khazana-1.onrender.com/api/resetpassword", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

@@ -22,7 +22,7 @@ export default function MyOrder() {
             return;
         }
         
-        await fetch("http://localhost:5000/api/myOrderData", {
+        await fetch("https://khana-khazana-1.onrender.com/api/myOrderData", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

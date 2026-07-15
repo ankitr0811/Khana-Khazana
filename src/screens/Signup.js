@@ -21,7 +21,7 @@ export default function Signup() {
     // console.log(latlong)
     let [lat, long] = latlong
     console.log(lat, long)
-    const response = await fetch("http://localhost:5000/api/getlocation", {
+    const response = await fetch("https://khana-khazana-1.onrender.com/api/getlocation", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -44,7 +44,7 @@ export default function Signup() {
       return;
     }
     
-    const response = await fetch("http://localhost:5000/api/createuser", {
+    const response = await fetch("https://khana-khazana-1.onrender.com/api/createuser", {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
       method: 'POST',

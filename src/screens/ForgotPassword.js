@@ -13,7 +13,7 @@ export default function ForgotPassword() {
     setLoading(true)
     setMessage('')
 
-    const response = await fetch("http://localhost:5000/api/forgotpassword", {
+    const response = await fetch("https://khana-khazana-1.onrender.com/api/forgotpassword", {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
